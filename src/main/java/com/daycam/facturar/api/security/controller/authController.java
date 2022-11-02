@@ -31,9 +31,9 @@ import com.daycam.facturar.api.security.jwt.JwtProvider;
 import com.daycam.facturar.api.security.service.RolService;
 import com.daycam.facturar.api.security.service.UsuarioService;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin
 public class authController {
 	
 	@Autowired
