@@ -1,7 +1,5 @@
 package com.daycam.facturar.api.menu.entities;
 
-import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -15,13 +13,8 @@ import com.daycam.facturar.api.security.entity.Rol;
 
 @Entity
 @Table(name = "menu")
-public class Menu implements Serializable {
-	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 2183226237713509377L;
-	
+public class Menu{
+
 	@Id
 	private int id;
 	@NotNull(message = "no puede ser nulo")
